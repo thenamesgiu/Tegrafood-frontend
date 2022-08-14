@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Cardápio - Tegrafood</title>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Stylesheet used-->
+    <link rel="stylesheet" href="../../assets/stylesheets/catalogs.css">
+    <!--Common Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!--Script usage-->
+    <script src="../../js/products.js"></script>
+    <script src="../../js/subpages.js"></script>
+
+  </head>
+  <!--Body will be showing all products when first loaded-->
+  <body onload="showAll()">
+    <nav id = "top-header">
+      <div class="nav-header">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="../../assets/img/shopping_cart.png">
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-bell"></i>
+
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-user"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="filtersnav">
+        <div class="toleft">
+          <h2>Produtos</h2>
+          <h2 id="sectionNow">Todos</h2>
+        </div>
+        <div class="toright">
+          <i class="fa fa-filter" onclick="priceShow()"></i>
+          <img src="../../assets/img/sort_by_alpha.png">
+        </div>
+      </div>
+    </nav>
+
+    <section id="side-nav" class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <img src="../../assets/img/logo_tegrafood.png">
+        </div>
+      </div>
+      <ul class="nav_list"> 
+        <li class="menu-items" id="all-item">
+          <a href="#">
+            <span class="links_name" onclick="showAll()" >Todos</span>
+          </a>
+        </li>
+        <li class="menu-items" id="pizza-item">
+          <a href="#">
+            <span class="links_name" onclick="showPizza()" >Pizza</span>
+          </a>
+        </li>
+        <li class="menu-items" id="dessert-item">
+          <a href="#">
+            <span class="links_name" onclick="showDessert()" >Sobremesa</span>
+          </a>
+        </li>
+        <li class="menu-items" id="burguer-item">
+          <a href="#">
+            <span class="links_name" onclick="showBurguers()" >Lanches</span>
+          </a>
+        </li>
+        <li class="menu-items" id="acai-item">
+          <a href="#">
+            <span class="links_name" onclick="showAcai()" >Açaí</span>
+          </a>
+        </li>
+        <li class="menu-items" id="drink-item">
+          <a href="#">
+            <span class="links_name" onclick="showDrinks()" >Bebidas</span>
+          </a>
+        </li>
+        </ul>
+     
+    </section>
+
+    <article class="content-container" id="food-catalog-container">
+ 
+      
+
+      
+    </article>
+
+    <aside class="filter-area" id="filters">
+      <div class="filters-price">
+        <i class="fa fa-minus" onclick="priceHide()"></i>
+
+        <p>Filtrar por preço</p>
+        <div class="filters-available">
+          <button id="from-five" onclick="priceFive()">R$5 à R$25</button>
+          <button id="from-twenty">R$26 à R$45</button>
+          <button id="from-forty">R$46 ou mais</button>
+        </div>
+        
+      </div>
+    </aside>
+
+   
+    <footer id="notifier-area">
+      <div class="notification-added" id="added-area">
+        <p>item adicionado ao carrinho</p>
+        <a href="#">ir para o carrinho</a>
+        <i class="fa fa-minus" onclick="hideAdded()"></i>
+      </div>
+     
+    </footer>
+
+  </body>
+</html>

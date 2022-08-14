@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Login - Tegrafood</title>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">
+    <!--Common Font Awesome url-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!--Script use-->
+    <script src="../js/index.js"></script>
+  
+  </head>
+  <body>
+    <!--Food image section-->
+    <section class="imagesec">
+    <img id="foodimg" src="../assets/img/foodindex.jpg">
+    </section>
+
+    <!--Using article as a container for form element-->
+    <article class="containerindex">
+        <h2>Bem vindo!</h2>
+        <p>Faça o login para continuar</p>
+        <form>
+            <div class="input-icons"> 
+              <i class="fa fa-envelope icon"></i>
+           
+              <input type="text" name="emaillogin" id="useremaillogin" class="cadlogin" placeholder="Seu e-mail" title="Insira o e-mail cadastrado." maxlength="256" required>
+            </div>
+            
+            <div class="input-icons">
+              <i class="fa fa-lock icon"></i>
+              <input type="password" name="passwordlogin" id="userpasswordlogin" class="cadlogin" placeholder="Senha" title="Insira sua senha." required>
+            </div>
+            <input type="button" value="Entrar" class="Enterin" onclick="LevelInfo()"></input>
+
+            <!--Separator-->
+            <div class="ruler"><span>ou</span></div>
+
+            <!--Sign up or Google login, using Google OAuth API-->
+            <div class="googlelogin" onclick="triedGoogle()">
+              <img src="../assets/img/Google_G_logo.png" >
+              <a>Entrar com o Google</a>
+            </div>
+            <div class="notyet">
+              <p> Não tem uma conta? <a href = "cad.html">Cadastre-se</a></p>
+            </div>
+        </form>
+        
+    </article>
+  </body>
+</html>

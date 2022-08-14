@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
+
+/*Common CSS*/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+
+
+/*Nav header style*/
+.nav-header{
+    
+    background-color: #DC9000;
+    overflow: hidden;
+}
+
+.nav-header ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    margin-right: 2%;
+}
+
+.nav-header li{
+    margin-left: 3%;
+    color: #FFFFFF;
+    font-size: 151%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.nav-header img{
+   height: 50%;
+   margin-top: 20%;
+}
+
+/*Filters and section nav*/
+.filtersnav{
+    color: #223263;
+    margin-top:2% ;
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    cursor: default;
+}
+
+/*Page content align next to navigation sidebar*/
+
+.content-container{
+    margin: 12px;
+    margin-top: 1%;
+}
+
+/*Products list styling*/
+.remove-item{
+    display: none;
+}
+
+.card-catalog{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.5px solid #BABABA;
+    border-radius: 8px;
+    overflow: none;
+    margin-left: 2%;
+    width: 90%;
+    box-shadow: 3px 3px 8px 1px #0000004D;
+    margin-bottom: 1%; 
+}
+
+.card-catalog img{
+    height: 8rem;
+    width: 8rem;
+    
+}
+
+.imageborders{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200%;
+    overflow: hidden;
+    margin: 1.25%;
+    margin-right: 0.5%;
+    box-shadow: 3px 3px 8px 1px #0000004D;
+}
+
+.card-catalog p{
+    color:#9B9B9B;
+    cursor: default;
+}
+
+.card-catalog h3{
+    color: #223263;
+    cursor: default;
+}
+
+.card-catalog select{
+    background-color: #DC9000;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 121%;
+    text-align:center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #0000004D; 
+    height: 7vh;
+    width: 6vw;   
+}
+
+.togetherleft{
+    margin-right: 35%;
+}
+
+.togetherleft h3{
+    text-shadow: 0px 4px 4px #0000004D;;
+}
+
+.togetherright{
+    text-align: center;
+    display: block;
+    margin-right: 5%;
+}
+
+.productlisting{
+    position: fixed;
+    height: 47%;
+    width: 98%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 1px 0px 4px  #0000001C;
+    border-radius: 8px;
+}
+
+.card-catalog select:hover{
+    background-color: #faaf23;
+    transition: all 2s ease;
+      
+}
+/*Trash can*/
+
+.next-to{   
+    display: flex;
+    justify-content: space-between;
+}
+
+.trashcan{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #223263;
+    font-size: 200%;
+    margin-right: 4%;
+}
+
+.trashcan i:hover{
+    color: #425AA1;
+    transition: all 2s ease;
+      
+}
+
+/*Request info and coupom container*/
+.Req-info-container{
+   position: fixed;
+   margin-top: 23.5%;
+   width: 100%;
+   
+}
+
+.side-to-side{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.coupom-container h3{
+    text-shadow: 0px 4px 4px #0000004D;
+}
+
+.coupom-container{
+    padding: 2%;
+    width: 40%;
+    border: 0.5px solid #BABABA;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 1px #0000004D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coupom-container button{
+    background-color: #DC9000;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 95%;
+    text-align:center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #0000004D; 
+    height: 7vh;
+    width: 10vw;   
+    margin-left: 6.5%;
+}
+
+.coupom-container button:hover{
+    background-color: #faaf23;
+    transition: all 2s ease;
+      
+}
+
+.coupom-container input{
+    padding: 9%;
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    margin-right: 25%;
+}
+
+.coupom-container input:focus{
+    outline: none;
+}
+
+.coupom-container h4{
+    cursor: default;
+    color: #223263;
+    margin-right: 2%;
+    
+}
+
+tr, td, table{
+    border: 1px solid #BABABAA9;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 94%;
+    text-align:right ;
+}
+
+.tabletotal{
+    margin-left: 2%;
+    width: 20%;
+    
+}
+
+#frete{
+    font-size: 84%;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#totalprice, #repeattotalprice{
+    color: #223263;
+    font-weight: bolder;
+    cursor: default;
+}
+
+
+
+.headings{
+    cursor: default;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+/*Ending request on cart page*/
+
+.requestend{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    margin-bottom: 4%;
+    margin-right: 5%;
+}
+
+#endreq{
+    background-color: #DC9000;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 95%;
+    text-align:center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #0000004D; 
+    padding: 5%;
+    margin-left: 5%;
+    height: 10vh;
+    width: 6vw;   
+}
+
+#endreq:hover{
+    background-color: #faaf23;
+    transition: all 2s ease;
+      
+}
+
+#endreq img{
+    height: 1rem;
+}
+
+#goback{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #223263;
+    font-weight: bold;
+}
+
+
+/*Responsive using media query*/
+
+@media(max-width: 650px){
+
+    /*Coupom and total area*/
+    .Req-info-container{
+        width: 98%;
+        
+    }
+
+    .side-to-side{
+        display: block;
+        justify-content: center;
+    }
+
+    .coupom-container h4{
+        font-size: 75%;
+    }
+    
+    .coupom-container button{
+        height: 6vh;
+        width: 12vh;
+        font-size: 75%;
+        padding: 3%;
+    }
+
+    .coupom-container input{
+        height: 3vh;
+        width: 35vw;
+    }
+
+    table{
+        margin-left: 250%;
+        font-size: 75%;
+    }
+
+    .coupom-container{
+        margin-top: 81%;
+        width: 98%;
+        margin-right: 50%;
+    }
+
+    /*Product listing*/
+    .trashcan{
+        display: none;
+    }
+
+    .desc{
+        font-size: 61%;
+        
+    }
+
+    .card-catalog h3{
+        font-size: 75%;
+       
+    }
+
+    .card-catalog select{
+        font-size: 85%;
+        width: 15vw;
+        height: 5vh;
+    }
+
+    .card-catalog{
+        width: 92%;
+        margin-bottom: 2%;
+    }
+
+    .togetherleft{
+        width: 60%;
+       margin-right: -14%;
+    }
+    
+    .togetherleft p{
+        margin-right: 5%;
+    }
+
+    .togetherleft h3{
+        margin-right: 15%;
+    }
+    .togetherright{
+
+        margin-right: -5%;
+    }
+
+    .card-catalog img{
+        width: 4rem;
+        height:4.9rem;
+    }
+
+
+    /*Ending request*/
+    .requestend{
+        width: 75%;
+        margin-bottom: 5%;
+    }
+
+    #endreq img{
+        display: none;
+    }
+    #endreq{
+        font-size: 85%;
+    }
+
+    #goback{
+        font-size: 85%;
+    }
+
+    /*Navigation*/
+    .nav-header li{
+        margin-top: 1.5%;
+        margin-right: 2%;
+    }
+
+    /*X-mark to remove items*/
+    .remove-item{
+        display: block;
+        margin-bottom: 30%;
+    }
+
+    .remove-item p{
+        color: #223263;
+        margin-top: 2%;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+}
+

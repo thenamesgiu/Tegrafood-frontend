@@ -1,0 +1,76 @@
+{
+    "id":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "details":[
+        {
+            "name": "Pizza de Marguerita",
+            "ingredients": "Muçarela, tomate, manjericão, orégano",
+            "price": "60",
+            "class": "Pizza",
+            "pic": "https://assets.unileversolutions.com/recipes-v2/54475.jpg"
+        },
+        {
+            "name": "Torta de Leite Ninho",
+            "ingredients": "Massa de Baunilha, creme de ninho tradicional, morango, chantilly",
+            "price": "70",
+            "class": "Sobremesa",
+            "pic": "https://i.ytimg.com/vi/61-5Da6JIa4/maxresdefault.jpg"
+        },
+        {
+            "name": "Lanche X-Burguer",
+            "ingredients": "Pão, hamburguer, alface, tomate, queijo cheddar, cebola e picles",
+            "price": "22",
+            "class": "Lanche",
+            "pic": "https://www.sabornamesa.com.br/media/k2/items/cache/bf26253d7b8f171dddb155f84ce1d562_XL.jpg"
+        },
+        {
+            "name": "Pizza de Strogonoff",
+            "ingredients": "Strogonoff, muçarela e orégano",
+            "price": "65",
+            "class": "Pizza",
+            "pic": "https://img.freepik.com/fotos-premium/pizza-brasileira-com-mussarela-estrogonofe-de-carne-e-palitos-de-batata-pizza-de-strogonoff-de-carne_311876-447.jpg?w=2000"
+        },
+        {
+            "name": "Açaí com frutas",
+            "ingredients": "Açaí, banana, morango, uva, leite ninho em pó e leite condensado",
+            "price": "18",
+            "class": "Acai",
+            "pic": "https://www.japacai.com.br/acai/imagens/fabrica-de-acai-com-polpa-de-frutas.jpg"
+        },
+        {
+            "name": "Refrigerante Coca-Cola 350ml",
+            "ingredients": "",
+            "price": "6",
+            "class": "Bebida",
+            "pic": "https://static.wixstatic.com/media/46fa11_71f04d31d6004f648d0dbb70468bf235~mv2.jpg/v1/fill/w_1280,h_1280,al_c,q_85/46fa11_71f04d31d6004f648d0dbb70468bf235~mv2.jpg"
+        },
+        {
+            "name": "Taça de sonho de valsa",
+            "ingredients": "Chocolate branco e preto, sonho de valsa, morango e leite condensado",
+            "price": "15",
+            "class": "Sobremesa",
+            "pic": "https://receitasnotadez.com.br/wp-content/uploads/2020/02/receitas-de-pave-de-bombom.jpg"
+        },
+        {
+            "name": "Barca de Açaí",
+            "ingredients": "Açaí, banana, morango, uva, leite ninho em pó e leite condensado",
+            "price": "22",
+            "class": "Acai",
+            "pic": "https://snowfruit.com.br/wp-content/uploads/2021/11/como_aumentar_as_vendas_no_verao_com_as_barcas_de_acai.png"
+        },
+        {
+            "name": "Refrigerante Coca-Cola zero 350ml",
+            "ingredients": "",
+            "price": "5",
+            "class": "Bebida",
+            "pic": "https://cdn.awsli.com.br/600x450/1964/1964090/produto/135571961638e8a012a.jpg"
+        },
+        {
+            "name": "Lanche de churrasco",
+            "ingredients": "Pão. hamburguer, calabresa, iscas de carne, muçarela, cebola e picles",
+            "price": "30",
+            "class": "Lanche",
+            "pic": "https://www.perdigao.com.br/assets/_images/0067e49098c180bcb49f0980201bb7693689d344.jpeg"
+        }
+       
+    ]
+}

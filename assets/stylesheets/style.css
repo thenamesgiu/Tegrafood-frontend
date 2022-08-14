@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
+
+/*Common CSS*/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: #FFFFFF;
+  
+}
+
+
+
+/*Subscription and login pages*/
+.imagesec{
+   float:left;
+   margin: 0 15px 0 0 ;
+}
+
+#foodimg{
+    height: 100%;
+    width: 65.5%;
+}
+
+.containerindex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.containerindex p{
+    color:#BABABA;
+    margin-bottom: 15%;
+    margin-left: 15%;
+    margin-right: -25%;
+    cursor: default;
+   
+}
+
+.containerindex h2{
+    margin-left: 15%;
+    margin-right: -25%;
+    cursor: default;
+    margin-bottom: 10%;
+    color:#070e45;
+    font-size: 195%;
+   
+}
+
+/*Default form*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    border-radius: 5px;
+    border: 2px solid #EEEDED;
+    font-size: 90%;
+    padding: 5.5%;
+    margin-bottom: 10%;
+    width: 170%;
+    margin-left: -15%;
+    outline: none;
+    caret-color: #A9A7A7;
+    color: #232323;
+   
+}
+
+input::placeholder{
+    font-weight: 500;
+}
+
+.Enterin{
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #D78B07;
+    font-size: 94%;
+    cursor: pointer;
+}
+
+/*Divider*/
+
+.ruler {
+    margin-left: 15%;
+    margin-right: -25%;
+    cursor: default;
+    color: #BABABA;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.ruler > span{
+    position: relative;
+    display: inline-block;
+}
+
+.ruler> span:before, .ruler > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 500%;
+    height: 1%;
+    background: #EEEDED;
+}
+
+.ruler > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.ruler > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/*Google button and subscription*/
+
+.googlelogin img{
+    height: 15px;
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    
+}
+
+.googlelogin{
+    margin-top: 10%;
+    border: 1px solid #EEEDED;
+    padding: 3.5%;
+    margin-bottom: 10%;
+    width: 170%;
+    margin-left: -15%;
+    border-radius: 4px;
+    cursor:pointer;
+
+    
+}
+
+.googlelogin a{
+
+    color: #BABABA;
+    font-weight: bolder;
+}
+
+p a{
+    font-weight: bolder;
+    color: #5FAEF4;
+}
+
+/*Icons next to input field*/
+
+.input-icons input{
+    margin-left: 1%;
+    border-left: none;
+    width: 155%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+ 
+.input-icons i{
+    border-radius: 5px;
+    border: 2px solid #EEEDED;
+    border-right: none;
+    font-size: 90%;
+    padding: 1.24%;
+    position: absolute;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.icon {
+    padding: 10px;
+    color: #A9A7A7;
+    font-size: 250%;
+    text-align: center;
+    margin-left: -2.9%;
+    background-color: #FFFFFF;
+}
+
+/*Responsive design with media query*/
+
+/*Subscription and login pages*/
+
+@media(max-width: 650px){
+   
+  body{
+    justify-content: center;
+    width: 100%;
+  }
+
+    .imagesec{
+        display: none;
+    }
+
+    .input-icons i{
+        display: none;
+    }
+
+    .input-icons input{
+        font-size: 71%;
+       
+        border: 2px solid#EEEDED;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .containerindex{
+        width: 100%;
+        height: auto;
+    }
+
+    .containerindex h2{
+        margin-left: 5%;
+        font-size: 151%;
+        margin-bottom: 3%;
+        margin-top: 5%;
+    }
+
+    .containerindex p{
+        margin-left: 5%;
+        font-size: 15px;
+        margin-bottom: 4%;
+    }
+
+    .Enterin{
+        font-size: 95%;
+        width: 120%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .notyet p{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .googlelogin a{
+        font-size: 85%;
+        
+    }
+
+    .googlelogin img{
+        height: 20px;
+    }
+
+}
+
+@media(max-width: 950px){
+    body{
+        overflow: hidden;
+        position: fixed;
+    }
+   
+    /*Login and subscrition pages*/
+    .imagesec{
+        float:left;
+        margin: 0 15px 0 0 ;
+        width: 55%;
+        
+    }
+     
+    #foodimg{
+        height: 100%;
+        width: 95.5%;
+    }
+
+    .input-icons i{
+        display: none;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .containerindex{
+        width: 40%;
+    }
+
+    .containerindex p {
+        margin-right: 10%;
+        font-size: 13px;
+        margin-bottom: 8%;
+    }
+
+    .containerindex h2{
+        margin-bottom: 4%;
+        margin-right: 9%;
+        
+    }
+
+    #cadheading{
+        font-size: 164%;
+    }
+    
+    form{
+        margin-left: -10%;
+    }
+
+    .googlelogin{
+        margin-left: 18%;
+        font-size: 95%;
+        width: 75%;
+        margin-bottom: 8%;
+    }
+    .notyet{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4%;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .Enterin{
+        width: 75%;
+        margin-left: 18%;
+        font-size: 95%;
+        margin-bottom: 4%;
+    }
+
+    .ruler{
+        margin-right: 5%;
+    }
+
+    .input-icons input{
+        margin-right: 1%;
+        margin-left: 10%;
+        width: 90%;
+        border: 2px solid#EEEDED;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+@media(max-width: 1463px){
+    .input-icons i{
+        padding: 1.5%;
+    }
+}
+
+
+

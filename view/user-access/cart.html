@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Carrinho - Tegrafood</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/stylesheets/cart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="../../js/index.js"></script>
+  
+  </head>
+  <body>
+    <nav id = "top-header">
+      <div class="nav-header">
+        <ul>
+          <li>
+            <a href="catalog.html">
+              <img src="../../assets/img/shopping_cart.png">
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-bell"></i>
+
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-user"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="filtersnav">
+    
+          <h2>Meu Carrinho</h2>
+        </div>
+      </div>
+    </nav>
+
+   
+    <section class="content-container">
+      <p id="testejson"></p>
+    <article class="productlisting">
+        <div class="next-to">
+            <div id="food" class="card-catalog">
+                <div class="imageborders">
+                <img src="https://massasaojudas.com.br/wp-content/uploads/elementor/thumbs/receita_pizza_marguerita-p9pafdk0g2pr9wlwkmcpgmxtvt5k23pjt5z5exzxio.png">
+                </div>
+                <div class="togetherleft">
+                <h3>Pizza de Marguerita</h4>
+                <p class="desc">(Muçarela, tomate, manjercão, orégano)</p>
+                </div>
+                <div class="togetherright">
+                <h3>R$60,00</h4>
+                    <select>
+                        <option value="1">1x</option>
+                        <option value="2">2x</option>
+                        <option value="5">5x</option>
+                        <option value="10">10x</option>
+                    </select>
+            
+                </div>
+                <div class="remove-item"> 
+                    <p class="xmark">X</p>
+                </div>
+            </div>
+            <div class="trashcan">
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="next-to">
+            <div id="food" class="card-catalog">
+                <div class="imageborders">
+                <img src="https://cdn.awsli.com.br/600x450/1964/1964090/produto/135571961638e8a012a.jpg">
+                </div>
+                <div class="togetherleft">
+                <h3>Refrigerante Coca zero 350ml</h4>
+                <p class="desc"></p>
+                </div>
+                <div class="togetherright">
+                <h3>R$5,00</h4>
+                    <select>
+                        <option value="1">1x</option>
+                        <option value="2">2x</option>
+                        <option value="5">5x</option>
+                        <option value="10">10x</option>
+                    </select>
+            
+                </div>
+                <div class="remove-item"> 
+                    <p class="xmark">X</p>
+                </div>
+            </div>
+            
+            <div class="trashcan">
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+  
+
+        <div class="next-to">
+            <div id="food" class="card-catalog">
+               
+
+                <div class="imageborders">
+                <img src="https://www.japacai.com.br/acai/imagens/fabrica-de-acai-com-polpa-de-frutas.jpg">
+                </div>
+                <div class="togetherleft">
+                
+                <h3>Açaí com frutas</h4>
+                <p class="desc">(Açaí, banana, morango, uva, leite ninho em pó e leite condensado)</p>
+                </div>
+                <div class="togetherright">
+                <h3>R$18,00</h4>
+                    <select>
+                        <option value="1">1x</option>
+                        <option value="2">2x</option>
+                        <option value="5">5x</option>
+                        <option value="10">10x</option>
+                    </select>
+            
+                </div>
+                <div class="remove-item"> 
+                    <p class="xmark">X</p>
+                </div>
+            </div>
+            <div class="trashcan">
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+
+     
+    </article>
+    
+    <aside class="Req-info-container">
+        <div class="side-to-side">
+            <div class="coupom-container">
+                <h4>Cupom de desconto</h4>
+                <form>
+                    <input type="text" title="Insira o código de cupom" id="coupom-code" name="coupom">
+                </form>
+                <button>Adicionar</button>
+            </div>
+            <div class="tabletotal">
+                <table class="pricestable">
+                    <tr>
+                        <td class="headings" >Subtotal</td>
+                        <td id="totalprice">R$83,00</td>
+                    </tr>
+                    <tr>
+                        <td class="headings">Entrega</td>
+                        <td id="frete">Calcular</td>
+                    </tr>
+                    <tr>
+                        <td class="headings">Total</td>
+                        <td id="repeattotalprice">R$83,00</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </aside>
+    <div class="requestend">
+        <a id="goback" href="catalog.html">Escolher mais</a>
+        <a id="endreq" onclick="itemsBought()">Fechar pedido 
+            <img src="../../assets/img/shopping_cart.png">
+        </a>
+    </div>
+
+    </section>
+
+    
+
+
+  </body>
+</html>

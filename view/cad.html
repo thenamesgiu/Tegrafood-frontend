@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Cadastro - Tegrafood</title>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">
+    <!--Common Font Awesome url-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!--Script use-->
+    <script src="../js/index.js"></script>
+  
+  </head>
+  <body>
+    <!--Food image section-->
+    <section class="imagesec">
+    <img id="foodimg" src="../assets/img/foodindex.jpg">
+    </section>
+
+    <!--Using article as a container for form element-->
+    <article class="containerindex">
+        <h2 id="cadheading">Vamos começar!</h2>
+        <p>Crie uma nova conta</p>
+
+        <form id="formulario">
+            <div class="input-icons">
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="nameuser" id="username" class="cadlogin" placeholder="Nome completo" title="Insira seu nome completo." required>
+            </div>
+
+            <div class="input-icons">
+              <i class="fa fa-envelope icon"></i>
+              <input type="text" name="emaillogin" id="useremail" class="cadlogin" placeholder="Seu e-mail" title="Insira um e-mail." maxlength="256" required>
+            </div>
+            
+            <div class="input-icons">
+              <i class="fa fa-lock icon"></i>
+              <input type="password" name="passwordcad" id="systempassword" class="cadlogin" placeholder="Senha" title="Insira sua senha." required>
+            </div>
+
+            <div class="input-icons">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" name="passwordconfirm" id="confirmpassword" class="cadlogin" placeholder="Confirme a senha" title="Repita a senha anteriormente informada." required>
+            </div>
+
+            <input id="CadButton" type="button" value="Entrar" class="Enterin" onclick="Redirecting()"></input>
+
+            <!--Already has an account-->
+            <div class="notyet">
+              <p> Já tem uma conta? <a href = "index.html">Entrar</a></p>
+            </div>
+        </form>
+        
+    </article>
+  </body>
+</html>

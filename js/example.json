@@ -1,0 +1,26 @@
+{
+    "id":[12, 13, 14],
+    "titulo": [ "Dance Across The Floor", "You get me hot","Celebration"],
+    "artista":["One Way", "Jimmi Bo Horne", "Kool & the Gang"],
+    "ficha":[
+        {
+            "ano":"1976",
+            "pais":"USA",
+            "gravadora":"ABC",
+            "preco":"$40,00"
+        },
+        {
+            "ano":"1979",
+            "pais":"USA",
+            "gravadora":"Topgran",
+            "preco":"$28,41"
+        },
+        {
+            "ano":"1980",
+            "pais":"USA",
+            "gravadora":"Rhino",
+            "preco":"$28,20"
+        }
+    ]
+
+}

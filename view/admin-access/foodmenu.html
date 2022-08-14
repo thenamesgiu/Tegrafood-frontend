@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Cardápio - Tegrafood</title>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Stylesheet used-->
+    <link rel="stylesheet" href="../../assets/stylesheets/catalogs.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/admincatalog.css">
+    <!--Common Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!--Script usage-->
+    <script src="../../js/products.js"></script>
+    <script src="../../js/subpages.js"></script>
+
+  </head>
+</head>
+<!--Body will be showing all products when first loaded-->
+<body onload="showAllAdmin()">
+  <nav id = "top-header">
+    <div class="nav-header">
+      <ul>
+        <li>
+          <a href="#">
+            <p id="questionmark">?</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <i class="fa fa-bell"></i>
+
+          </a>
+        </li>
+        <li>
+          <i class="fa fa-user"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="filtersnav">
+      <div class="toleft">
+        <h2>Produtos</h2>
+        <h2 id="sectionNow">Todos</h2>
+      </div>
+      <div class="toright">
+        <img src="sort_by_alpha.png">
+        <a id="addingnew" onclick="showAside()">Adicionar +</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="side-nav" class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <img src="logo_tegrafood.png">
+      </div>
+    </div>
+    <ul class="nav_list"> 
+      <li class="menu-items" id="all-item">
+        <a href="#">
+          <span class="links_name" onclick="showAllAdmin()" >Todos</span>
+        </a>
+      </li>
+      <li class="menu-items" id="pizza-item">
+        <a href="#">
+          <span class="links_name" onclick="showPizzaAdmin()" >Pizza</span>
+        </a>
+      </li>
+      <li class="menu-items" id="dessert-item">
+        <a href="#">
+          <span class="links_name" onclick="showDessertAdmin()" >Sobremesa</span>
+        </a>
+      </li>
+      <li class="menu-items" id="burguer-item">
+        <a href="#">
+          <span class="links_name" onclick="showBurguersAdmin()" >Lanches</span>
+        </a>
+      </li>
+      <li class="menu-items" id="acai-item">
+        <a href="#">
+          <span class="links_name" onclick="showAcaiAdmin()" >Açaí</span>
+        </a>
+      </li>
+      <li class="menu-items" id="drink-item">
+        <a href="#">
+          <span class="links_name" onclick="showDrinksAdmin()" >Bebidas</span>
+        </a>
+      </li>
+      </ul>
+   
+  </section>
+
+  <article class="content-container" id="food-catalog-container">
+    
+  </article>
+ 
+  <aside id="newone">
+      <div class="newproduct">
+          <form>
+              <div class="nome">
+                  <input type="text" title="Insira o nome do produto" placeholder="Nome">
+              </div>
+              <div class="categoria">
+               <input type="text" title="Insira a categoria do produto" placeholder="Categoria">
+              </div>
+              <div class="descricao">
+                  <input type="textarea" title="Insira a descrição do produto" placeholder="Descrição">
+              </div>
+              <div class="valor">
+                  <input id="valueinput" type="text" title="Insira o valor do produto" placeholder="Valor">
+              </div>
+              <div id="right">
+              <div id="imageadd">
+                  <p>Adicione uma imagem
+                  </p>
+                  </div>
+              </div>
+              <a onclick="hideAside()">Cancelar</a>
+              <button onclick="notifAdded()">Cadastrar</button>
+
+          </form>
+      </div>
+  </aside>
+
+  <footer id="notifier-area">
+    <div class="notification-added" id="added-area">
+      <p>Produto cadastrado</p>
+      <a href="#">Cancelar</a>
+      <i class="fa fa-minus" onclick="hideAdded()"></i>
+    </div>
+    
+  </footer>
+
+</body>
+</html>
