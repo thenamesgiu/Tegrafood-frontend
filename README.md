@@ -7,7 +7,7 @@ Durante sua experiência, será possível encontrar: Tela fake de login com rest
 
 É possível acessar a área de produtos tanto como um cliente quanto como um administrador. Para entrar como um administrador, na tela de login utilize qualquer tipo de e-mail (obedecendo o formato padrão de e-mail) que contenha "admin" ou "administrator", demais emails te redirecionarão para a área de cliente.
 
-Para visualizar a listagem de produtos, devido ao uso de XMLHttpRequest é necessário que o projeto seja executado acompanhado de algum tipo de servidor, ainda, para a filtragem de produtos por tipo, é possível a presença de delay, para facilitar a experiência, você pode acessar o projeto completo por esse url: https://testing-food.000webhostapp.com/index.html
+Para visualizar a listagem de produtos, devido ao uso de XMLHttpRequest é necessário que o projeto seja executado acompanhado de algum tipo de servidor, ainda, para a filtragem de produtos por tipo, é possível a presença de delay, para facilitar a experiência, você pode acessar o projeto completo por essa url: https://testing-food.000webhostapp.com/index.html
 
 O projeto inicia-se na página de login, as direções a se tomar são autoexplicativas
 
